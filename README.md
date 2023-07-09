@@ -3,6 +3,13 @@
 - The real tamplate which can be copy is located under the `template` folder.
 ***
 
+## Module vs. packages
+- **module** – a module is a file containing Python functions.
+- **package** – a package is a collection of modules intended to be installed and used together.
+- This templates focuses on you to build a package.
+- [Module vs. Package vs. Library vs. Framework](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/modules_packages_libraries_frameworks.md)
+***
+
 ## `Setup.cfg`
 - This file is no longer required for configuring a package, but third-party tools may still use it. 
 ***
