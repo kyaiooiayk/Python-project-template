@@ -1,4 +1,6 @@
 # Template for your Python project
+- This repo is a template with explanation.
+- The real tamplate which can be copy is located under
 ***
 
 ## `Setup.cfg`
