@@ -10,12 +10,21 @@
 - [Module vs. Package vs. Library vs. Framework](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/modules_packages_libraries_frameworks.md)
 ***
 
-## `Setup.cfg`
+## The `Setup.cfg` file
 - This file is no longer required for configuring a package, but third-party tools may still use it. 
 ***
 
-## `pyproject.toml`
+## The `pyproject.toml` file
 - This is what replaces `setup.cfg`.
+***
+
+## The `test` folder
+- The test folder go at the top-level of the project with an `__init__.py` file so they are discoverable by applications like `pytest`.
+- The alternative of placing them inside the src/mypackage directory means they will get deployed into production which may not be desirable.
+***
+
+## The `src` folder
+- It prevents tools like pytest incidently importing it.
 ***
 
 ## References
