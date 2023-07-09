@@ -78,4 +78,6 @@ fi
 - [Publishing packages and modules](https://packaging.python.org/en/latest/guides/distributing-packages-using-setuptools/)
 - [Understanding setup.py, setup.cfg and pyproject.toml in Python](https://ianhopkinson.org.uk/2022/02/understanding-setup-py-setup-cfg-and-pyproject-toml-in-python/)
 - [Avoiding `sys.path.append(..)` for imports](https://stackoverflow.com/questions/68033795/avoiding-sys-path-append-for-imports)
+- [Packaging a Python Codebase](https://madewithml.com/courses/mlops/packaging/)
+- [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 ***
