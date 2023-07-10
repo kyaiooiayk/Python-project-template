@@ -38,7 +38,7 @@ from setuptools import setup
 if __name__ == "__main__":
     setup()
 ```
-- If you do not intend to publish your project then this file is NOT required at all, and `pip install -e .` will still work. `e` stands for `editable`. Upon execution you should see something like this:
+- If you do not intend to publish your project then this file is NOT required at all, and `pip install -e .` will still work. `e` stands for `editable`. Upon execution you should be able to see something like this:
 ```shell
 Successfully built my-package-name
 Installing collected packages: my-package-name

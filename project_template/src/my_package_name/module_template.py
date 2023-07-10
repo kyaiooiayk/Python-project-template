@@ -6,8 +6,7 @@ class Vehicle(metaclass=abc.ABCMeta):
     base_sale_price = 0.0
     wheels = 0
 
-    def __init__(self, wheels, miles, make, model, year):
-        self.wheels = wheels
+    def __init__(self, miles, make, model, year):    
         self.make = make
         self.model = model
         self.miles = miles
@@ -17,7 +16,7 @@ class Vehicle(metaclass=abc.ABCMeta):
         """
         We charge a flat rate of 5k per wheels
         """
-        return 5000.0 * sel.wheels
+        return 5000.0 * self.wheels
 
     def purchaise_price(self):
         """
@@ -43,17 +42,6 @@ class Car(Vehicle):
         Returns a string representing the type of vehicle this is.
         """
         return "car"
-
-
-class Truck(Vehicle):
-    wheels = 6
-    based_sale_price = 10000
-
-    def vehicle_type(self):
-        """
-        Returns a string representing the type of vehicle this is.
-        """
-        return "truck"
 
 
 class Motorcycle(Vehicle):
