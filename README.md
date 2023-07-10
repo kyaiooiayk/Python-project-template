@@ -11,9 +11,16 @@
 ***
 
 ## Overview
-| What | Location | Purpouse |
+| What | Location | Purpouse | Find out more|
 | :-: | :-: | :-: |
-| LICENCES | root | Telling users/contributor what they can/can't use the package for |
+| `LICENSE` | `root` | Telling users/contributor what they can/can't use the package for |
+| `setup.py` | `root` | Package and distribution management |
+| `requirements.txt` | `root` | List of dependencies for users |
+| `requirements_dev.txt` | `root` | List of dependencies for developers |
+| `docs` | `root/docs` | Package info, API descriptios and tutorials |
+| `tests` | `root/tests`| Intergration and unittests |
+| `context.py` | `root/tests` | Facilitate tests without installing the package |
+| `Makefile` | `root` | Generic management tasks | [link](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/tree/main/tutorials/makefile) |
 ***
 
 ## What to put in your porject
