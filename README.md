@@ -1,4 +1,4 @@
-# Template for your Python project
+# 🐍📝Template for your Python project🐍📝
 - This repo is a template with explanation.
 - The real tamplate which can be copy is located under the `template` folder.
 ***
@@ -10,24 +10,22 @@
 - [Module vs. Package vs. Library vs. Framework](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/modules_packages_libraries_frameworks.md)
 ***
 
-## The `Setup.cfg` file
+## What to put in your porject
+
+### The `Setup.cfg` file
 - This file is no longer required for configuring a package, but third-party tools may still use it. 
-***
 
-## The `pyproject.toml` file
+### The `pyproject.toml` file
 - This is what replaces `setup.cfg`.
-***
 
-## The `test` folder
+### The `test` folder
 - The test folder go at the top-level of the project with an `__init__.py` file so they are discoverable by applications like `pytest`.
 - The alternative of placing them inside the src/mypackage directory means they will get deployed into production which may not be desirable.
-***
 
-## The `src` folder
+### The `src` folder
 - It prevents tools like pytest incidently importing it.
-***
 
-## `setup.py` file
+### `setup.py` file
 - The setup file dictates everything Python installer needs to know when building/publicising your package.
 - It is also important to note (although this is mixed up), `setup.py` is NOT required for installation, but only for build/publication.
 - Once it is written, two things needs to be *continously* updated:
@@ -71,6 +69,13 @@ if twine check dist/* ; then
 fi
 ```
 - See [this](https://pypistats.org/search/pyde) if you want to see some statistics about your package.
+***
+
+## What you can run manually
+- Many of the checks (formatting, linting, etc.. ) can be run through a `.pre-commit.ymal` which is triggered by some evernts.
+- This can be overwritten in two ways:
+    - Run the pre-commit with `pre-commit run -a`
+    - Run one tool of you choice: `black file.py` or `flake file.py` or `pylint`
 ***
 
 ## References
