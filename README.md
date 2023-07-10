@@ -1,6 +1,6 @@
 # 🐍📝Template for your Python project🐍📝
-- This repo is a template with explanation.
-- The real tamplate which can be copy is located under the `template` folder.
+- This repo is a template with explanations. An initial explanation is provided and links are offered for the curious.
+- The real template which can be copied is located under the `template` folder.
 ***
 
 ## Module vs. packages
