@@ -38,7 +38,13 @@ from setuptools import setup
 if __name__ == "__main__":
     setup()
 ```
-- If you do not intend to publish your project then this file is NOT required at all, and `pip install -e .` will still work. `e` stands for `editable`.
+- If you do not intend to publish your project then this file is NOT required at all, and `pip install -e .` will still work. `e` stands for `editable`. Upon execution you should see something like this:
+```shell
+Successfully built my-package-name
+Installing collected packages: my-package-name
+Successfully installed my-package-name-0.0.0
+```
+- Now you can import the package with: `import my_package_name`
 - This will add a symlink into your site-packages folder and make your local project behave as if it was fully installed while at the same time you can continue editing. This saves you from adding this at the to of the file:
 ```python
 import sys
@@ -85,5 +91,6 @@ fi
 - [Avoiding `sys.path.append(..)` for imports](https://stackoverflow.com/questions/68033795/avoiding-sys-path-append-for-imports)
 - [Packaging a Python Codebase](https://madewithml.com/courses/mlops/packaging/)
 - [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
-- [[python-package-template](https://github.com/TezRomacH/python-package-template)
+- [python-package-template](https://github.com/TezRomacH/python-package-template)
+- [Structuring Your Project](https://docs.python-guide.org/writing/structure/)
 ***
