@@ -5,8 +5,8 @@
 
 ## Module vs. packages
 - **module** – a module is a file containing Python functions.
-- **package** – a package is a collection of modules intended to be installed and used together.
-- This templates focuses on you to build a package.
+- **package** – a package is a collection of modules intended to be installed and used together. Packages are a way of structuring Python’s module namespace by using “dotted module names”. For example, the module name `A.B` designates a submodule named `B` in a package named `A`. 
+- This template focuses on how to build a package.
 - [Module vs. Package vs. Library vs. Framework](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/modules_packages_libraries_frameworks.md)
 ***
 
@@ -21,7 +21,7 @@
 | `tests` | `root/tests`| Intergration and unittests | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/tree/main/tutorials/Testing) |
 | `context.py` | `root/tests` | Facilitate tests without installing the package |
 | `Makefile` | `root` | Generic management tasks | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/tree/main/tutorials/makefile) |
-| `__init__.py` | `root/src/package_name` | Required so you can import the directory as a package, and is generally empty | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/self%20and%20__init__.ipynb) |
+| `__init__.py` | `root/src/package_name` | Required so you can import the directory as a package, and is generally empty ot set the `__all__` variable  | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/self%20and%20__init__.ipynb) |
 | `pyproject.toml` | `root` | | |
 ***
 
@@ -157,4 +157,5 @@ fi
 - [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 - [python-package-template](https://github.com/TezRomacH/python-package-template)
 - [Structuring Your Project](https://docs.python-guide.org/writing/structure/)
+- [Packaging project](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 ***
