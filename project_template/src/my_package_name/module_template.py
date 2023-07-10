@@ -34,6 +34,7 @@ class Vehicle(metaclass=abc.ABCMeta):
 
 
 class Car(Vehicle):
+    # Class attributes specific to the Car class
     wheels = 4
     based_sale_price = 8000
 
@@ -45,6 +46,7 @@ class Car(Vehicle):
 
 
 class Motorcycle(Vehicle):
+    # Class attributes specific to the Car class
     wheels = 2
     based_sale_price = 4000
 

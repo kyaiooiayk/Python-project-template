@@ -50,6 +50,20 @@ Successfully installed my-package-name-0.0.0
 import sys
 sys.path.append("../")
 ```
+- `requirements.txt` & `requirements_dev.txt`
+- It should specify the dependencies required.
+- Generally, it is good practice to keep to file, one for normal usage and one for development where you can you put the requiremetns for testing, building, and generating documentation.
+- This file is not requied if (generally people put both options):
+    - There are no dependencies.
+    - There is a preference to set up the environment via `setup.py`.
+***
+
+###  `README.md`
+- Your project front page.
+
+###  `LICENSE`
+- This where, the full license text and copyright claims should exist in this file. If unsture, check out [choosealicense.com](https://choosealicense.com/).
+- You are also free to publish code without a license, but this would prevent many people from potentially using or contributing to your code.
 ***
 
 ## How to deploy the package in PyPI
