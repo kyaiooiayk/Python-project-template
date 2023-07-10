@@ -80,4 +80,5 @@ fi
 - [Avoiding `sys.path.append(..)` for imports](https://stackoverflow.com/questions/68033795/avoiding-sys-path-append-for-imports)
 - [Packaging a Python Codebase](https://madewithml.com/courses/mlops/packaging/)
 - [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+- [[python-package-template](https://github.com/TezRomacH/python-package-template)
 ***
