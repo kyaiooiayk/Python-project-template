@@ -13,7 +13,7 @@
 ## Overview
 | What | Location | Purpouse |
 | :-: | :-: | :-: |
-|
+| LICENCES | root | Telling users/contributor what they can/can't use the package for |
 ***
 
 ## What to put in your porject
@@ -103,7 +103,7 @@ test:
 - Your project front page.
 
 ###  `LICENSE`
-- This where, the full license text and copyright claims should exist in this file. If unsture, check out [choosealicense.com](https://choosealicense.com/).
+- This is where, the full license text and copyright claims should exist in this file. If unsture, check out [choosealicense.com](https://choosealicense.com/).
 - You are also free to publish code without a license, but this would prevent many people from potentially using or contributing to your code.
 ***
 
