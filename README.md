@@ -10,6 +10,12 @@
 - [Module vs. Package vs. Library vs. Framework](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/modules_packages_libraries_frameworks.md)
 ***
 
+## Overview
+| What | Location | Purpouse |
+| :-: | :-: | :-: |
+|
+***
+
 ## What to put in your porject
 ***
 
@@ -70,7 +76,6 @@ Successfully installed my-package-name-0.0.0
 import sys
 sys.path.append("../")
 ```
-
 ### `requirements.txt` & `requirements_dev.txt`
 - It should specify the dependencies required.
 - Check this out [how to generate a requirements.txt](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/requirements.md) if you want to know more.
@@ -78,6 +83,20 @@ sys.path.append("../")
 - This file is not requied if (generally people put both options):
     - There are no dependencies.
     - There is a preference to set up the environment via `setup.py`.
+
+### `Makefile`
+- It is used to executing generic tasks for your project.
+- Pay attention that to be valid it needs to have a particular formatting.
+- Check [this](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/tree/main/tutorials/makefile/example_1) to find out more.
+```Makefile
+init:
+    pip install -r requirements.txt
+
+test:
+    py.test tests
+
+.PHONY: init test
+```
 ***
 
 ###  `README.md`
