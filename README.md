@@ -21,6 +21,8 @@
 | `tests` | `root/tests`| Intergration and unittests | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/tree/main/tutorials/Testing) |
 | `context.py` | `root/tests` | Facilitate tests without installing the package |
 | `Makefile` | `root` | Generic management tasks | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/tree/main/tutorials/makefile) |
+| `__init__.py` | `root/src/package_name` | Required so you can import the directory as a package, and is generally empty | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/self%20and%20__init__.ipynb) |
+| `pyproject.toml` | `root` | | |
 ***
 
 ## What to put in your porject
