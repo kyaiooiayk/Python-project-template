@@ -11,19 +11,39 @@
 ***
 
 ## What to put in your porject
+***
+
+### The `test` folder
+- The test folder go at the top-level of the project with an `__init__.py` file so they are discoverable by applications like `pytest`.
+- The alternative of placing them inside the src/mypackage directory means they will get deployed into production which may not be desirable.
+- Tests need to import your packaged module to test it. You have two options:
+    - Expect the package to be installed in site-packages.
+    - Use a simple (but explicit) path modification to resolve the package properly.
+- The latter is recommended. Requiring a developer to run setup.py develop to test an actively changing codebase also requires them to have an isolated environment setup for each instance of the codebase.
+- To give the individual tests import context, create a `tests/context.py` file:
+```python
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'path_to_your_package')))
+
+import your_package_name
+```
+- Then, within the individual test modules, import the module like so: `from context import sample`
+- This will always work as expected, regardless of installation method.
+
+### The `src` folder
+- It prevents tools like pytest incidently importing it.
+
+### The `docs` folder
+- Package reference documentation.
+
+***
 
 ### The `Setup.cfg` file
 - This file is no longer required for configuring a package, but third-party tools may still use it. 
 
 ### The `pyproject.toml` file
 - This is what replaces `setup.cfg`.
-
-### The `test` folder
-- The test folder go at the top-level of the project with an `__init__.py` file so they are discoverable by applications like `pytest`.
-- The alternative of placing them inside the src/mypackage directory means they will get deployed into production which may not be desirable.
-
-### The `src` folder
-- It prevents tools like pytest incidently importing it.
 
 ### `setup.py` file
 - The setup file dictates everything Python installer needs to know when building/publicising your package.
