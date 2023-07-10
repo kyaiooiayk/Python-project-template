@@ -13,14 +13,14 @@
 ## Overview
 | What | Location | Purpouse | Find out more|
 | :-: | :-: | :-: | :-: |
-| `LICENSE` | `root` | Telling users/contributor what they can/can't use the package for |
-| `setup.py` | `root` | Package and distribution management |
-| `requirements.txt` | `root` | List of dependencies for users |
-| `requirements_dev.txt` | `root` | List of dependencies for developers |
-| `docs` | `root/docs` | Package info, API descriptios and tutorials |
-| `tests` | `root/tests`| Intergration and unittests |
+| `LICENSE` | `root` | Telling users/contributor what they can/can't use the package for | |
+| `setup.py` | `root` | Package and distribution management | |
+| `requirements.txt` | `root` | List of dependencies for users | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/requirements.md) |
+| `requirements_dev.txt` | `root` | List of dependencies for developers | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/requirements.md) |
+| `docs` | `root/docs` | Package info, API descriptios and tutorials | |
+| `tests` | `root/tests`| Intergration and unittests | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/tree/main/tutorials/Testing) |
 | `context.py` | `root/tests` | Facilitate tests without installing the package |
-| `Makefile` | `root` | Generic management tasks | [link](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/tree/main/tutorials/makefile) |
+| `Makefile` | `root` | Generic management tasks | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/tree/main/tutorials/makefile) |
 ***
 
 ## What to put in your porject
