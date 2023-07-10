@@ -6,7 +6,7 @@ class Vehicle(metaclass=abc.ABCMeta):
     base_sale_price = 0.0
     wheels = 0
 
-    def __init__(self, miles, make, model, year):    
+    def __init__(self, miles, make, model, year):
         self.make = make
         self.model = model
         self.miles = miles
