@@ -25,7 +25,7 @@
 | `pyproject.toml` | `root` | | |
 ***
 
-## What to put in your porject
+## What to put in your project
 ***
 
 ### The `test` folder
