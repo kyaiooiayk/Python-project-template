@@ -50,8 +50,10 @@ Successfully installed my-package-name-0.0.0
 import sys
 sys.path.append("../")
 ```
-- `requirements.txt` & `requirements_dev.txt`
+
+### `requirements.txt` & `requirements_dev.txt`
 - It should specify the dependencies required.
+- Check this out [how to generate a requirements.txt](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/requirements.md) if you want to know more.
 - Generally, it is good practice to keep to file, one for normal usage and one for development where you can you put the requiremetns for testing, building, and generating documentation.
 - This file is not requied if (generally people put both options):
     - There are no dependencies.
