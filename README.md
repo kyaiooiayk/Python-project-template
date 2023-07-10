@@ -12,7 +12,7 @@
 
 ## Overview
 | What | Location | Purpouse | Find out more|
-| :-: | :-: | :-: |
+| :-: | :-: | :-: | :-: |
 | `LICENSE` | `root` | Telling users/contributor what they can/can't use the package for |
 | `setup.py` | `root` | Package and distribution management |
 | `requirements.txt` | `root` | List of dependencies for users |
