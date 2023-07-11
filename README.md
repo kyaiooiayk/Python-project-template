@@ -5,11 +5,11 @@
 ***
 
 ## Environment vs. package managers
-- You have 3 options:
+- You have 3 options and admitally the functions these do overlaps quite a lot:
     - `Pyenv`: native python enviromet manager,
     - `conda`: very robust package environment manager not limited to python.
     - `poetry`: best choice for production package manager. This boils down to the fact it is very good at managing dependency requirements and conflict.
-- Check [this](https://github.com/kyaiooiayk/Environment-Package-and-Project-Manager/blob/dev/README.md) out if you want to know more.
+- Check [this](https://github.com/kyaiooiayk/Environment-Package-and-Project-Manager/blob/dev/README.md) out if you want to know more about the differences between the three and how to install poetry.
 ***
 
 ## Module vs. packages
@@ -25,13 +25,14 @@
 | `LICENSE` | `root` | Telling users/contributors what they can/can't use the package for | |
 | `setup.py` | `root` | Package and distribution management | |
 | `requirements.txt` | `root` | List of dependencies for users | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/requirements.md) |
-| `requirements_dev.txt` | `root` | List of dependencies for developers | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/requirements.md) |
+| `requirements-dev.txt` | `root` | List of dependencies for developers | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/requirements.md) |
 | `docs` | `root/docs` | Package info, API descriptios and tutorials | |
 | `tests` | `root/tests`| Intergration and unittests | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/tree/main/tutorials/Testing) |
 | `context.py` | `root/tests` | Facilitate tests without installing the package |
 | `Makefile` | `root` | Generic management tasks | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/tree/main/tutorials/makefile) |
 | `__init__.py` | `root/src/package_name` | Required so you can import the directory as a package, and is generally empty ot set the `__all__` variable  | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/self%20and%20__init__.ipynb) |
-| `pyproject.toml` | `root` | | |
+| `pyproject.toml` | `root` | Managed by poetry if you used, but still editable by you | |
+| `pyproject.lock` | `root` | Managed by poetry if you used, but still editable by you | |
 ***
 
 ## What to put in your project
@@ -93,13 +94,24 @@ Successfully installed my-package-name-0.0.0
 import sys
 sys.path.append("../")
 ```
-### `requirements.txt` & `requirements_dev.txt`
+### `requirements.txt` & `requirements-dev.txt`
 - It should specify the dependencies required.
 - Check this out [how to generate a requirements.txt](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/requirements.md) if you want to know more.
 - Generally, it is good practice to keep to file, one for normal usage and one for development where you can you put the requiremetns for testing, building, and generating documentation.
 - This file is not requied if (generally people put both options):
     - There are no dependencies.
     - There is a preference to set up the environment via `setup.py`.
+- If you are using poetry these files are not required as they managed automatically for you:
+```shell
+[tool.poetry.dependencies]
+numpy = "^1.22.3"
+pandas = "^1.4.2"
+
+[tool.poetry.dev-dependencies]
+black = "^21.7b0"
+isort = "^5.9.3"
+pytest = "^6.0"
+```
 
 ### `Makefile`
 - It is used to executing generic tasks for your project.
