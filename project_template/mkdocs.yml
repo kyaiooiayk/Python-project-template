@@ -1,0 +1,15 @@
+site_name: your_site_name
+site_description: your_project_description
+site_author: author_name
+
+nav:
+  - About: about.md
+  - Installation: installation.md
+  - Quickstart: quickstart.md
+
+theme:
+  name: readthedocs
+
+  # Static files
+  static_templates:
+    - 404.html
