@@ -31,8 +31,8 @@
 | `context.py` | `root/tests` | Facilitate tests without installing the package |
 | `Makefile` | `root` | Generic management tasks | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/tree/main/tutorials/makefile) |
 | `__init__.py` | `root/src/package_name` | Required so you can import the directory as a package, and is generally empty ot set the `__all__` variable  | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/self%20and%20__init__.ipynb) |
-| `pyproject.toml` | `root` | Managed by poetry if you used, but still editable by you | |
-| `pyproject.lock` | `root` | Managed by poetry if you used, but still editable by you | |
+| `pyproject.toml` | `root` | Managed by poetry if you used, but still editable by you | [Tutorial](https://github.com/kyaiooiayk/Environment-Package-and-Project-Manager/blob/dev/README.md) |
+| `pyproject.lock` | `root` | Managed by poetry if you used, but still editable by you. It stores only the metadata of dependencies that do not have conflicts with one another.  | [Tutorial](https://github.com/kyaiooiayk/Environment-Package-and-Project-Manager/blob/dev/README.md) |
 ***
 
 ## What to put in your project
