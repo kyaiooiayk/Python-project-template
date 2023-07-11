@@ -137,6 +137,16 @@ test:
 - You are also free to publish code without a license, but this would prevent many people from potentially using or contributing to your code.
 ***
 
+## How to deploy your doc with GitHub pages
+- This is probably the easiest option available out there.
+- Install `mkdocs` with: `pip install mkdocs`
+- Create a folder called docs in your repository and place there all the `.md` files there.
+- Create a `mkdocs.ymal` on your project root directory.
+- Build doctumentation with: `mkdocs buil`
+- Build doctumentation with: `mkdocs` serve and you can have a look at the locally deployed docs.
+- When you are satisfied with it, you can then deploy it to Github pages with: `mkdocs gh-deploy`. This will create an additional branch called gh-pages and your docs should then be available.
+***
+
 ## How to deploy the package in PyPI
 - Go to pypi.org and create an account
 - Install twine with: `pip install twine`
