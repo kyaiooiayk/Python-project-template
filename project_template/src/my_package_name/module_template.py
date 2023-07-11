@@ -14,7 +14,10 @@ class Vehicle(metaclass=abc.ABCMeta):
 
     def sale_price(self):
         """
-        We charge a flat rate of 5k per wheels
+        We charge a flat rate of 5k per wheels.
+        This is independent on the vehicle type, but
+        we are of course making the assumption each vehicle
+        has wheel
         """
         return 5000.0 * self.wheels
 

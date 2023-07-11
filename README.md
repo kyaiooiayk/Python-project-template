@@ -6,7 +6,8 @@
 
 ## Environment vs. package managers
 - You have 3 options and admitally the functions these do overlaps quite a lot:
-    - `Pyenv`: native python enviromet manager,
+    - Python native
+    - `Pyenv`
     - `conda`: very robust package environment manager not limited to python.
     - `poetry`: best choice for production package manager. This boils down to the fact it is very good at managing dependency requirements and conflict.
 - Check [this](https://github.com/kyaiooiayk/Environment-Package-and-Project-Manager/blob/dev/README.md) out if you want to know more about the differences between the three and how to install poetry.
