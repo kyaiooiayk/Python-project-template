@@ -1,6 +1,15 @@
 # 🐍📝Template for your Python project🐍📝
 - This repo is a template with explanations. An initial explanation is provided and links are offered for the curious.
 - The real template which can be copied is located under the `template` folder.
+- The python scripts contains mostly OOP codes. This should serves as a concrete example of production codes.
+***
+
+## Environment vs. package managers
+- You have 3 options:
+    - `Pyenv`: native python enviromet manager,
+    - `conda`: very robust package environment manager not limited to python.
+    - `poetry`: best choice for production package manager. This boils down to the fact it is very good at managing dependency requirements and conflict.
+- Check [this](https://github.com/kyaiooiayk/Environment-Package-and-Project-Manager/blob/dev/README.md) out if you want to know more.
 ***
 
 ## Module vs. packages
@@ -13,7 +22,7 @@
 ## Overview
 | What | Location | Purpouse | Find out more|
 | :-: | :-: | :-: | :-: |
-| `LICENSE` | `root` | Telling users/contributor what they can/can't use the package for | |
+| `LICENSE` | `root` | Telling users/contributors what they can/can't use the package for | |
 | `setup.py` | `root` | Package and distribution management | |
 | `requirements.txt` | `root` | List of dependencies for users | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/requirements.md) |
 | `requirements_dev.txt` | `root` | List of dependencies for developers | [Tutorial](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/requirements.md) |
@@ -51,7 +60,6 @@ import your_package_name
 
 ### The `docs` folder
 - Package reference documentation.
-
 ***
 
 ### The `Setup.cfg` file
