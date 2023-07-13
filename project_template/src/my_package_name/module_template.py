@@ -2,6 +2,11 @@ import abc
 
 
 class Vehicle(metaclass=abc.ABCMeta):
+    """Vehicle class is an abstarct class.
+    An abstract is not meant to be initiate directly by
+    the user.
+    """
+
     # These are two class attribute that depends on the type of object
     base_sale_price = 0.0
     wheels = 0
