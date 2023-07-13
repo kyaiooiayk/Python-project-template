@@ -14,6 +14,6 @@
 ***
 
 
-## TODO 
+## CHANGELOG
 **Purpouse**: details a short overview of the changes
 ***
