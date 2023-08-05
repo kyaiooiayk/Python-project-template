@@ -20,6 +20,34 @@
 - [Module vs. Package vs. Library vs. Framework](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/modules_packages_libraries_frameworks.md)
 ***
 
+## GitHub in the big picture
+Generally a good DS and most definetly a ML/MLOPS will generally follow the following steps:
+- `poetry`: sort out virtual environments for good, all your project definitions in pyproject.toml. Much better than conda and virtual env.
+- `black`: code formatte
+- `ruff`: new blazing fast linter, anything that black doesn't care about will be fixed here
+- `pytest`: test your code
+- `pre-commit-hooks`: automate all of the above and forget about them.    
+- **GitHub Actions: run these on the remote as well, just to be sure.**
+```shell
+poetry new -n --src <project>
+cd <project>
+poetry config virtualenvs.in-project true
+poetry env use python3.10
+source .venv/bin/activate
+poetry add back ruff pytest pre-commit
+git init
+git add .
+git commit -m "my first commit"
+git branch -M main
+git remote add origin git@github.com:<username>/<project>.git # Create empty repositore on remote server
+git push -u origin main
+pre-commit install
+poetry run pytest
+poetry run black .
+poetry run ruff . --fix
+```
+***
+
 ## Overview
 | What | Location | Purpouse | Find out more|
 | :-: | :-: | :-: | :-: |
