@@ -17,6 +17,7 @@
 - **module** – a module is a file containing Python functions.
 - **package** – a package is a collection of modules intended to be installed and used together. Packages are a way of structuring Python’s module namespace by using “dotted module names”. For example, the module name `A.B` designates a submodule named `B` in a package named `A`. 
 - This template focuses on how to build a package.
+   A module is simply a file containing Python code. A package, however, is like a directory that holds sub-packages and modules. In order for a package to be importable, it should contain a `__init__.py` file. That’s not the case for modules.
 - [Module vs. Package vs. Library vs. Framework](https://github.com/kyaiooiayk/Awesome-Python-Programming-Notes/blob/main/tutorials/modules_packages_libraries_frameworks.md)
 ***
 
