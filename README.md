@@ -93,11 +93,12 @@ import your_package_name
 - Package reference documentation.
 ***
 
-### The `Setup.cfg` file
+### The `setup.cfg` file
 - This file is no longer required for configuring a package, but third-party tools may still use it. 
 
 ### The `pyproject.toml` file
 - This is what replaces `setup.cfg`.
+- This where options related to `Black` and `isort` are configured. Interesting `Black` and `isort` have incompatible default options and [generally](https://sourcery.ai/blog/python-best-practices/) people override isort to follow black's lead.
 
 ### `setup.py` file
 - The setup file dictates everything Python installer needs to know when building/publicising your package.
