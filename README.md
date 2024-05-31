@@ -5,7 +5,7 @@
 ***
 
 ## Environment vs. package managers
-- You have 3 options and admitally the functions these do overlaps quite a lot:
+- You have 3 options and admitally their goals overlaps quite a lot:
     - Python native
     - `Pyenv`
     - `conda`: very robust package environment manager not limited to python.
